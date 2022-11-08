@@ -1,0 +1,107 @@
+
+
+
+
+                                                                                                                             MODULE: 4 (JavaScript Basic & DOM)
+
+
+
+
+1. What is JavaScript? 
+                 
+              >  JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
+
+2.  What is the use of isNaN function? 
+
+               > The isNaN() function is used to check whether a given value is an illegal number or not. It returns true if value is a NaN else returns false. It is different from the Number.
+
+3. • What is negative Infinity? 
+
+               >  NEGATIVE_INFINITY is the same as the negative value of the global object's Infinity property. This value behaves slightly differently than mathematical infinity: Any positive value, including POSITIVE_INFINITY , multiplied by NEGATIVE_INFINITY is NEGATIVE_INFINITY .
+
+4. • Which company developed JavaScript? 
+
+               >     Netscape
+               >     The first ever JavaScript was created by Brendan Eich at Netscape, and has since been updated to conform to ECMA-262 Edition 5 and later versions. This engine, code named SpiderMonkey, is implemented in C/C++.
+
+5. • What are undeclared and undefined variables? 
+
+              >       Undefined variable means a variable has been declared but does not have a value. Undeclared variable means that the variable does not exist in the program at all.
+
+6. • Write the code for adding new elements dynamically? 
+
+              >  document. createElement("<tagName>"); 
+                 
+              >   // Where <tagName> can be any HTML // tagName like div, ul, button, etc. // newDiv element has been created For Eg: let newDiv = document. createElement("div");
+
+7. • What is the difference between ViewState and SessionState? 
+
+              >   ViewState is to manage state at the client's end, making state management easy for end-user while SessionState manages state at the server's end, making it easy to manage content from this end too.
+
+8. • What is === operator? 
+
+              >      The strict equality operator (===) checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+
+9. • How can the style/class of an element be changed? 
+
+               >      Element Class Names
+
+               >            Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's        
+                             class, you use element. className .
+
+10. • How to read and write a file using JavaScript? 
+
+              >        readFile() and rs. writeFile() methods are used to read and write of a file using javascript. The file is read using the fs. readFile() function, which is an inbuilt method.
+
+11. • What are all the looping structures in JavaScript? 
+
+            >           JavaScript supports different kinds of loops:
+
+                         :-       for - loops through a block of code a number of times
+                         :-       for/in - loops through the properties of an object
+                         :-       for/of - loops through the values of an iterable object
+                         :-       while - loops through a block of code while a specified condition is true
+                         :-       do/while - also loops through a block of code while a specified condition is true
+
+12. • How can you convert the string of any base to an integer in JavaScript? 
+
+            >           In JavaScript parseInt() function (or a method) is used to convert the passed in string parameter or value to an integer value itself. This function returns an integer of base which is specified in second argument of parseInt() function.
+
+
+13. • What is the function of the delete operator? 
+
+            >           The delete operator removes a given property from an object. On successful deletion, it will return true , else false will be returned.
+
+14. • What are all the types of Pop up boxes available in JavaScript? 
+
+           >            JavaScript has three kind of popup boxes: 
+
+                    1.      Alert box,
+                    2.     Confirm box,
+                    3.     Prompt box.
+
+15.   • What is the use of Void (0)? 
+
+
+          >               It is used to prevent any side effects caused while inserting an expression in a web page.
+
+16. • How can a page be forced to load another page in JavaScript? 
+
+
+         >              We can use window. location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+
+
+17.  • What are the disadvantages of using innerHTML in JavaScript? 
+
+        >                Disadvantages of innerHTML:-
+
+                                   - Event handlers attached to any DOM element are preserved.
+                                   - Replacement is done everywhere.
+                                   - It is not possible to append innerHTML.
+                                   - Breaks the document.
+                                   - Used for Cross-site Scripting.
+
+
+
+
+
