@@ -1,0 +1,396 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    background: url('psd-img/Rectangle.png');
+    padding: 20px;
+    /* height: 450px;
+    width: 1320px; */
+    height: 595px;
+    background-color: #ffc045;
+}
+.col-1 {
+    display: flex;
+    margin: 0 auto;
+}
+.f-sec{
+    display: flex;
+}
+.scutty-img img{
+    margin-left: 744px;
+}
+.text{
+    /* padding-top: 10px;
+    padding-left: 15px; */
+    font-size: 16px;
+    line-height: 31px;
+    color: #3d2514;
+    font-weight: 700;
+    text-align: right;
+}
+.logo-2{
+    display: flex;
+}
+nav ul{
+    margin-left: 500px;
+
+}
+nav ul li {
+    display:inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    padding-left: 42px;
+    /* padding: 21px; */
+    color: #3d2514;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color:blueviolet;
+}
+
+
+
+
+.second-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-text{
+    padding-top: 90px;
+
+}
+.burger-img img{
+    height: 90vh;
+    width: 100%;
+
+}
+.sub-title{
+    border: 1px dashed gray;
+    padding: 5px 48px;
+}
+
+.burger{
+    font-size: 114px;
+    /* line-height: 0px; */
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 700;
+    filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+}
+.sub-2{
+    font-size: 56px;
+    line-height:2px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 400;
+    filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+}
+
+
+
+.mid-section{
+    display: flex;
+    margin: 50px;
+}
+.right-img{
+    width: 50%;
+}
+.left-img{
+    width: 50%;
+}
+.f-img{
+    padding: 10px;
+    width:50%;
+}
+.s-img{
+    padding: 10px;
+    width: 50%;
+}
+
+
+
+.center{
+    text-align: center;
+    margin: 50px;
+}
+.f-pera{
+    background: url('psd-img/Rectangle\(s-3\).png') no-repeat center center/cover;
+    width: 200px;
+    display:inline-block;
+    padding: 0px 15px;
+    font-size: 16px;
+    color: #3d2514;
+    font-weight: 700;
+}
+.s-pera{
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 400;
+}
+.t-pera{
+    font-size: 17px;
+    line-height: 29px;
+    color: #3d2514;
+}
+
+
+.section-4{
+    display: flex;
+    /* margin: 0px -40px; */
+    align-items: baseline;
+}
+.img{
+   /* margin: -25px; */
+}
+.discription{
+    text-align: center;
+}
+button{
+    font-size:larger;
+    /* line-height: 38px; */
+    color: #ffffff;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: 900;
+    border: none;
+}
+
+button:hover{
+    color:rgb(22, 21, 21);
+    background-color:rgb(250, 46, 46);  
+}
+
+.section-5{
+    width: 95vw;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    margin: 26px;
+    box-shadow: gray 0px 0px 17px 4px;
+}
+.product-img{
+    padding: 0px;
+}
+.product-img img{
+    height: 90%;
+    margin-top: 24px;
+}
+.img-detail{
+    margin: 50px;
+}
+.img-detail h4{
+    font-size: 29px;
+    letter-spacing: 2px;
+    line-height: 0px;
+    color: #3d3d3d;
+    font-weight: 700;
+}
+.img-detail h1{
+    font-size: 42px;
+    line-height: 30px;   
+    color: #3d2514;
+    font-weight: 900;
+}
+.img-detail p{
+    width: 531px;
+    height: 173px;
+    font-size: 21px;
+    line-height: 33px;
+    color: #3d3d3d;
+    font-weight: 400;
+}
+
+.dot{
+    display: flex;
+    margin-top: 50px;
+}
+.dot1{
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+    background-color: #ffc045;
+    margin: 2px;
+}
+.dot2{
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+    background-color: #dcdcdc;
+    margin: 2px;
+}
+.dot3{
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+    background-color: #dcdcdc;
+    margin: 2px;
+}
+
+
+
+
+.section-6{
+    display: flex;
+    margin-top: 0px;
+}
+
+.booking{
+    margin-top: 90px;
+}
+
+.head-text h5{
+    text-align: center;
+    font-size: 29px;
+    letter-spacing: 2px;
+    line-height: 0px;
+    color: #3d2514;
+    font-weight: 700;
+}
+.head-text h1{
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 3px;
+    line-height: 46px;
+    color: #3d2514;
+    font-weight: 900;
+}
+
+.booking{
+    margin-left: 90px;
+}
+.form{
+    width: 500px;
+}
+.form input{
+    border: 0.4px solid rgb(197, 88, 88);
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 6px;
+
+}
+input[type=submit]{
+        background-color: red;
+        color: whitesmoke;
+        font-size:large;
+        font-weight: 900;
+        text-transform: uppercase;
+        
+}
+input[type=submit]:hover{
+        background-color: rgb(231, 39, 39);
+        color: #3d3d3d;
+        cursor: pointer;
+        /* transform: scale(1.2) rotate(360deg);
+        transition: 1.5s; */
+        transform:scale(1.2) rotateY(30deg);
+        transition: 1s;
+}
+
+.top-img{
+    margin: 32px 0px 0px -86px;
+}
+
+.bottal-img{
+    margin: -186px 0px 0px 85px;
+}
+
+.burger-dish{
+    margin-left: 200px;
+    margin-top: 232px;
+}
+
+
+
+.footer{
+    margin-top: -240px;
+}
+
+.footer-img{
+    background: url('psd-img/Place\ Your\ Design\ Here\ \(footer-img\).png') no-repeat center center;
+    height: 100vh;
+    width: 88%;
+    /* background-color: black; */
+    padding: 60px 60px 60px 60px;
+    
+}
+.l-img-text{
+    width: 50%;
+}
+.l-img-text img{
+    margin-top: 130px;
+    filter: invert(100%);
+}
+.l-img-text p{
+    color: white;
+    text-align:start;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+
+}
+
+.footer-img{
+    margin: 20px;
+}
+.footer-dis{
+    display: flex;
+}
+
+.r-icon-text{
+    color: white;
+    margin-top: 220px;
+    margin-left: 230px;
+}
+
+.r-icon-text i{
+    font-size: x-large;
+    margin-right: 10px;
+}
+.r-icon-text h4{
+    text-transform: uppercase;
+}
+
+.footer-a{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 180px;
+    align-items: baseline;;
+}
+
+.f-left{
+    width: 50%;
+}
+
+.f-right{
+    /* width: 50%; */
+}
+
+.f-left h5{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.f-right i{
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+.f-right a{
+    color:white;
+    text-decoration: none;
+}
