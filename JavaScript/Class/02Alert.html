@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert and confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        // alert("Login success")
+
+        // let name = prompt("What is your name?", "guest");
+        // console.log(name)
+
+        // confirm("are you sure???")
+        // confirm("are you redy to submit???")
+
+
+        ///////////////////////////////////////////////
+
+        // var a = prompt("What is your name ?");
+
+        // document.write("Welcome" + " " + a)
+
+
+        //////////////////////////////////////////////
+
+
+    //     let age = prompt("Enter your age", "age");
+    //   if(age < 18){,
+    //     alert("You are not eligible for this product");
+    //   } 
+    //   else{
+    //     alert("You are eligible for this product")
+    //   }
+
+
+      let a=prompt("Enter your age:");
+      
+      if(a>=18) { 
+      
+        alert("you are allowed to vote");
+      
+      let m=confirm("Do you really want to vote?");
+      
+      if(m){
+      
+        alert("You have successfully voted");
+      }
+      else{
+
+        alert("Although, you are eligible but you denied to vote");
+      }
+
+      }
+      else{
+        alert("you are not allowed");
+      }
+
+
+      
+    </script>
+</body>
+</html>
