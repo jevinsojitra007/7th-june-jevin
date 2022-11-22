@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // var ary = new Array(3);
+
+        //     for(var g = 0; g < 3; g++){
+        //         ary[g] = prompt("Enter the value : ");
+        //     }
+
+        //     for(var a = 0; a < 3; a++){
+        //         document.write(ary[a] + "<br>")
+        //     }
+
+            ///////////////////////////////////////////////////////////////
+
+            // Multi-dimensional array //
+
+            var ary = [
+                ["Jevin", 21, "Male", "B.com" ],
+                ["Darshan", 19, "Male", "BSC"],
+                ["Uttam", 24, "Male", "Computer sci"],
+                ["Kaksha", 17, "Fe-male", "BSC"]
+
+            ]
+
+            document.write(ary.length)
+            
+            document.write("<table border='1px' cellspacing='0'>")
+
+            for(var a = 0; a < ary.length; a++){
+                document.write("<tr>")
+                for(var b = 0; b < ary[a].length; b++){
+                    document.write("<td>" + ary[a][b] + "</td>")
+
+                }
+                document.write("</tr>")
+            }
+            document.write("<table>")
+
+            ///////////////////////////////////////////////////////////////
+
+            // Modify or Delete valu //
+
+            // var a = ["Harry", 18 , "BCA"];
+            // document.write(a + "<br>");
+            // a[1] = 19;
+            // document.write(a + "<br>");
+            // delete a[1];
+            // document.write(a + "<br>");
+
+            // document.write(a[1]);
+
+            /////////////////////////////////////////////////////////////////////
+            
+
+            //Array Sort,Reverse,  Pop,Push,  Shift,Unshift //
+
+            // var a = ["Sanjay","Vijay","Hardik","Bhavdip","Kamlesh"];
+            // document.write(a + "<br><br>");
+
+            // a.sort();
+            // document.write(a + "<br><br>");
+            // a.reverse();
+            // document.write(a + "<br><br>");
+
+
+            // a.pop();
+            // document.write(a + "<br><br>");
+            // a.push("Kishan");
+            // document.write(a + "<br><br>");
+
+
+            // a.shift();
+            // document.write(a + "<br><br>");
+            // a.unshift("Darshan");
+            // document.write(a + "<br><br>");
+
+        
+            // Arry Concat and Join  //
+
+            // var a = ["Rahul","Raxit","Ramesh"];
+            // var b = ["Jatin","Kirtal","Manish"];
+            // var d = ["Umesh","Puja"];
+
+            // var c = a.concat(b,d);
+            // document.write(c + "<br><br>");
+            
+            // var j = c.join(" * ");
+            // document.write(j);
+
+
+
+            //Array Slice and Splice //
+
+            // var a = ["Rahul","Raxit","Ramesh","Jatin","Keyur"];
+            // document.write(a + "<br><br>");
+            
+            // var b = a.slice(1 ,4);
+            // document.write(b);
+            
+            
+            // var a = ["Rahul","Raxit","Ramesh","Jatin","Keyur"];
+            // document.write(a + "<br><br>");
+            // a.splice(2,1)
+            // document.write(a + "<br><br>");
+
+
+            // Array Is Array //
+
+            // var a = ["Rahul","Neha"];
+            // var a = 20;
+            // var a = "Kesha";
+
+            // var b = Array.isArray(a);
+            // document.write(b + "<br><br>");
+
+            // document.write(a + "<br><br>");
+            // if(Array.isArray(a)){
+            //     document.write("This Is An Array");
+                
+            // }else{
+            //     document.write("This Is Not An Array");
+                
+            // }
+
+
+            // Array IndexOf and LastIndexOf //
+
+            // var a = ["Karan","Aman","Bhumik","Aman","Priya"];
+            // document.write(a + "<br><br>");
+            
+            // var b = a.indexOf("Aman",2);    //IndexOf
+            // document.write(b +"<br><br>");
+            
+            // var c = a.lastIndexOf("Bhumik")  //LastIndexOf
+            // document.write(c +"<br><br>");
+            
+            
+            // Includes // 
+            
+            // var a = ["Karan","Aman","Bhumik","Aman","Priya"];
+            // document.write(a + "<br><br>");
+            
+            // var b = a.includes("Bhumik")        // Includes
+            // document.write(b + "<br><br>");
+
+
+            // Some & Every //
+
+            // var ages = [10,4,14,17,19];
+            // document.write(ages + "<br><br>");
+            
+            // var adultAges = ages.some(checkadult);     // Some  && ( Find =>return with first value )
+            // document.write(adultAges + "<br>");
+            
+            // function checkadult(ages){
+            //     return ages >= 18
+            // }
+
+            // var ages = [20,40,24,27,39];
+            // document.write(ages + "<br><br>");
+            
+            // var adultAges = ages.every(checkadult);     // Every && ( FindIndex =>return with first value and index number )
+            // document.write(adultAges + "<br>");
+            
+            // function checkadult(ages){
+            //     return ages >= 18
+            // }
+
+            
+
+            // Filter  //
+
+            // var ages = [10,4,24,17,29];
+            // document.write(ages + "<br><br>");
+            
+            // var adultAges = ages.filter(checkadult);     // Filter  => will return all the values , which are currect
+            // document.write(adultAges + "<br>");
+            
+            // function checkadult(ages){
+            //     return ages >= 18
+            // }
+
+
+
+            // Array totring  //
+
+            // var name = ["Aman","Vamika","Axar"];
+            // name.toString();                          // toString 
+            
+            // document.write(name)
+            
+            
+            // var a = ["Aman","Vamika","Axar"];
+            // a.fill("Ram");                                  // fill 
+
+            // document.write(a);
+
+
+            ///////////////////////////////////////////////////
+
+            // forEach Function //
+
+            // var a = ["Aman","Vamika","Axar","Virat","Ankit","Dhoni"];
+
+            // a.forEach(loop);
+
+            // function loop(value){
+            //     document.write(value + "<br>")
+            // }
+
+    </script>
+</body>
+</html>
