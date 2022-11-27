@@ -40,10 +40,27 @@
 
         // finding odd number
 
-        for(var a = 1; a <= 100 ; a++){
-            if(a %2 != 0){
-                document.write(a + "<br>")
-            }
+        // for(var a = 1; a <= 100 ; a++){
+        //     if(a %2 != 0){
+        //         document.write(a + "<br>")
+        //     }
+        // }
+
+
+
+        ////////////////////////////////////////////////////
+
+        // For In Loop 
+
+        var obj = {
+            fname : "Bhupendra",
+            lname : "Vora",
+            age : 30,
+            email : "bhupendra@vora.net"
+        };
+
+        for(var key in obj){
+            document.write(key + " : " + obj[key] + "<br>")
         }
 
     </script>
