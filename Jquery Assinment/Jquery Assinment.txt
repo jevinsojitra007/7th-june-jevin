@@ -1,0 +1,23 @@
+                                                                                                      MODULE: 5 (JQuery Basic, Effects & Advance)
+
+
+
+1.What is JQuery? 
+
+=>     jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery ...
+
+
+2.How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery,
+JQuery Animation? 
+
+
+=>    We are going to use some jQuery UI addClass() and removeClass() methods. addClass() method: It is used to add specified classes to each of the targeted elements while animating all style changes. removeClass() method: It is used to remove the classes from the element while animating all style changes.
+
+
+3.How to create slider with animation?
+
+=>    Step 1:> Come up with a strategy for the slider. You can make as many modifications as you want to Slider Revolution templates. ...
+        Step 2:> Update the background image in each slide. ...
+        Step 3:> Update the text layers in each slide. ...
+        Step 4:> Edit the button text and design in each slide. ...
+        Step 5:> Edit the slider navigation.
