@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jquery Syntex</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .test1{
+            width: 400px;
+            height: 200px;
+            background-color: orange;
+            border: 1px solid gray  ;
+            text-align:left;
+            padding-left: 10px;
+        }
+        .test1 h3{
+            padding-left: 20px;
+        }
+        .test2{
+            width: 400px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 1px solid gray  ;
+            margin-left: 90px;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .test2 h3{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jquery syntex</h1>
+    
+    <div class="container">
+
+    <div class="test1">
+        <h3>Test 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio soluta. Aspernatur, quaerat. Voluptatem, debitis aliquam numquam consectetur voluptate non odit, fugiat deleniti sapiente delectus reprehenderit neque, exercitationem sequi vero.</p>
+
+    </div>
+
+    <div class="test2">
+        <h3>Test2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus veniam aliquid laborum voluptatibus vitae eaque, itaque quam, corporis adipisci dolorum aspernatur labore consequatur tenetur perspiciatis alias, deleniti rerum commodi.</p>
+    </div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            var a = $('.test1').html();
+            console.log(a)
+
+            var b = $('.test2').html();
+            console.log(b)
+         });
+    </script>
+</body>
+</html>
