@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Jquery Syntex</title>
     <style>
-        .container{
+        #container{
             display: flex;
         }
-        .test1{
+        #test1{
             width: 400px;
             height: 200px;
             background-color: orange;
@@ -17,10 +17,10 @@
             text-align:left;
             padding-left: 10px;
         }
-        .test1 h3{
+        #test1 h3{
             padding-left: 20px;
         }
-        .test2{
+        #test2{
             width: 400px;
             height: 200px;
             background-color: aquamarine;
@@ -29,7 +29,7 @@
             text-align: left;
             padding-left: 10px;
         }
-        .test2 h3{
+        #test2 h3{
             padding-left: 20px;
         }
     </style>
@@ -38,15 +38,15 @@
 
     <h1>Jquery syntex</h1>
     
-    <div class="container">
+    <div id="container">
 
-    <div class="test1">
+    <div id="test1">
         <h3>Test 1</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, distinctio soluta. Aspernatur, quaerat. Voluptatem, debitis aliquam numquam consectetur voluptate non odit, fugiat deleniti sapiente delectus reprehenderit neque, exercitationem sequi vero.</p>
 
     </div>
 
-    <div class="test2">
+    <div id="test2">
         <h3>Test2</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus veniam aliquid laborum voluptatibus vitae eaque, itaque quam, corporis adipisci dolorum aspernatur labore consequatur tenetur perspiciatis alias, deleniti rerum commodi.</p>
     </div>
@@ -55,10 +55,10 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
          $(document).ready(function(){
-            var a = $('.test1').html();
+            var a = $('#test1').html();
             console.log(a)
 
-            var b = $('.test2').html();
+            var b = $('#test2').html();
             console.log(b)
          });
     </script>
