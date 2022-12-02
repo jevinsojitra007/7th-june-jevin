@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Method's</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        #box{
+            height: 100px;
+            width: 400px;
+            padding: 20px;
+            background-color: pink;
+            border: 1px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <h1>jquery Get Method's</h1>
+    <div id="box" class="test abc">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> Sunt, porro! Cumque at corporis repudiandae adipisci?</span> </p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var a = $('#box').html();
+            console.log(a);
+
+            var b = $('#box').text();        // it's show only text's
+            console.log(b);
+
+            var c = $('#box').attr('class');        // it's show only attribute's (id & class)
+            console.log(c)
+        });
+    </script>
+</body>
+</html>

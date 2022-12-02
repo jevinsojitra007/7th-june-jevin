@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        .test{
+            border: 2px solid black;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Mouse Event</h1>
+
+    <div id="box" class="test">
+        <h2>Test</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cupiditate!</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#box').click(function(){
+            $('#box').css("background-color","grey")
+        });
+        $('#box').dblclick(function(){
+            $('#box').css("background-color","orange")
+        });
+        $('#box').contextmenu(function(){
+            $('#box').css("background-color","blue")
+        });
+        $('#box').mouseenter(function(){
+            $('#box').css("background-color","tan")
+        });
+        $('#box').mouseleave(function(){
+            $('#box').css("background-color","purple")
+        });
+      });
+    </script>
+</body>
+</html>
