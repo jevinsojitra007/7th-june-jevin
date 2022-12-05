@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Value Method</title>
+</head>
+<body>
+    <h1>jquery form  val method</h1>
+
+    <form action="" id="sform">
+        Name : <input type="test" id="sname"><br><br><br>
+        Class : <input type="text" id="sclass"> <br><br><br>
+
+        <input type="submit">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#sname').val('jevin');
+            $('#sclass').val('Btech');
+        });
+    </script>
+</body>
+</html>
