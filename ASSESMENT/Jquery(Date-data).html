@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px 80px;
+            text-align: center;
+        }
+        button{
+            margin-left: 40px;
+        }
+        .output{
+            border: 1px solid black;
+            height: 200px;
+            background-color: wheat;
+        }
+        #output span{
+            color: red;
+        }
+        #output p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h2>Date Interval</h2>
+    </div>
+    <hr>
+    <label for="start_date">From : </label><input type="date" name="" id="start_date">
+    <br><br>
+    <label for="end_date">To : </label><input type="date" name="" id="end_date">
+    <br><br>
+    <button id="Calculate">Calculate</button>
+
+    <br>
+    <br>
+    
+    <div  class="output">
+        <p>Select the dates to get started</p>
+        <hr>    
+        <h1 id="output"></h1>
+    </div>
+
+
+
+    <script>
+        // declaring and initializing variables
+
+        let Calculate = document.getElementById("Calculate");
+        let output = document.getElementById("output");
+
+        Calculate.addEventListener("click",() =>{
+            //creat a date object from input value
+
+            let start_date = new Date (document.getElementById("start_date").value);
+            let end_date = new Date (document.getElementById("end_date").value);
+            // console.log(end_date)
+
+            //check if the input dates are valid
+            //if valid , calculate the difference
+            if(start_date.getTime() && end_date.getTime() ){
+                //calculate difference in time using getTime function
+                //getTime calculates number of years since january 1,1970 
+
+                let timeDifference = end_date.getTime() - start_date.getTime();
+                //since this value is in milisecond we need to convert it into days
+                //we want the difference to be a non-nagative number. hence we use math.abs()
+
+                // console.log(timeDifference)
+
+                let dayDifference = Math.abs(timeDifference/(1000 *60*60* 24));
+
+                // console.log(dayDifference);
+
+                output.innerHTML = `Difference between the two date is <span> <b> ${dayDifference} </b> </span>days`;
+            }
+
+            // else display that the input is valid
+            else{
+                output.innerHTML = "<p> Please select a date's </p>"
+            }
+        });
+    </script>
+</body>
+</html>
