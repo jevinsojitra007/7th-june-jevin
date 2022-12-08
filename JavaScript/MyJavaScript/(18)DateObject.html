@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var date = new Date("january 3 2012");
+
+        console.log(date.toDateString());
+        console.log(date.getDay());
+        console.log(date.getDate());
+        console.log(date.getMonth());
+        console.log(date.getFullYear());
+
+        /////////////////////////////////
+
+        var time = new Date();
+
+        console.log(time.getHours());
+        console.log(time.getMinutes());
+        console.log(time.getSeconds());
+        console.log(time.getMilliseconds());
+
+        ///////////////////////////////////
+
+        // SET METHOD'S
+
+        var day = new Date();
+        // day.setDate(15)
+        // day.setFullYear(2024)
+        // day.setMonth(3)
+        // day.setHours(17)
+
+        console.log(day.getDate() + "/" + day.getMonth() + "/" + day.getFullYear())
+    </script>
+</body>
+</html>
