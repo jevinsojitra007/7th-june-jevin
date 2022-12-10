@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px 80px;
+            text-align: center;
+        }
+        button{
+            margin-left: 40px;
+        }
+        .output{
+            border: 1px solid black;
+            /* height: 200px; */
+            background-color: wheat;
+        }
+        #output span{
+            color: red;
+        }
+        #output p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h2>Date Interval</h2>
+    </div>
+    <hr>
+    <label for="date-1">From : </label><input type="date" name="" id="start_date">
+    <br><br>
+    <label for="date-2">To : </label><input type="date" name="" id="end_date">
+    <br><br>
+    <button id="Calculate">Calculate</button>
+
+    <br>
+    <br>
+    
+    <div  class="output">
+        <p>Select the dates to get started</p>
+        <hr>    
+        <h1 id="output"></h1>
+    </div>
+
+
+
+    <script>
+        let Calculate = document.getElementById("Calculate");
+        let output = document.getElementById("output");
+
+        Calculate.addEventListener("click",() =>{
+
+            let start_date = new Date (document.getElementById("start_date").value);
+            let end_date = new Date (document.getElementById("end_date").value);
+
+            if(start_date.getTime() && end_date.getTime() ){
+
+                let timeDifference = end_date.getTime() - start_date.getTime();
+                let dayDifference = Math.abs(timeDifference/(1000 *60*60* 24));
+                let hourDifference = Math.abs(timeDifference/(1000 *60*60));
+                let minutDifference = Math.abs(timeDifference/(1000 *60));
+                let secondDifference = Math.abs(timeDifference/(1000 ));
+                let weekDifference = Math.abs(timeDifference/(1000 *60*60* 24* 7));
+
+                output.innerHTML = `Difference between the two date is <span> <b> ${dayDifference} </b>days <br>
+                    ${hourDifference}hour,<br>
+                    ${minutDifference}minut,<br>
+                    ${secondDifference}second,<br>
+                    ${timeDifference}milisecond,<br>
+                    ${weekDifference}Week,
+                    </span>`;
+                // output.innerHTML = `Difference between the two date is <span> <b> ${timeDifference} </b> </span>days`;
+            }
+            else{
+                output.innerHTML = "<p> Please select a date's </p>"
+            }
+        });
+    </script>
+</body>
+</html>
