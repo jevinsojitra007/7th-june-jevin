@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery ON-OFF Methods</title>
+    <style>
+         body{
+            font-family: Arial;
+        }
+        .test{
+            height: 100px;
+            width: 900px;
+            padding: 20px;
+            /* background-color: pink; */
+            border: 1px solid black ;
+        }
+        .boxbg{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>jquery On-Off Methods</h1>
+
+    <div class="test" id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam consequuntur deleniti ad sed quidem dolor amet enim perspiciatis non nihil cumque minus nemo commodi!</p>
+    </div>
+    <br>
+    <button id="removestyle">Remove Style</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        //             ON
+        // $(document).ready(function(){
+        //     $("#box").on("mouseover mouseout",function(){
+        //         $(this).toggleClass("boxbg")
+        //     });
+        // });
+
+        /////////////////////////////////////////////////////
+
+        //        ON-OFF
+
+        $(document).ready(function(){
+            $("#box").on({
+                "click" : function(){
+                    $(this).css('background','orange')
+                },
+                "mouseover" : function(){
+                    $(this).css('background','lightblue')
+                    
+                },
+                "mouseout" : function(){
+                    $(this).css('background','yellow')
+
+                }
+            });
+            $('#removestyle').click(function(){
+                $("#box").off("mouseover mouseout")
+            });
+        });
+
+
+    </script>
+</body>
+</html>
