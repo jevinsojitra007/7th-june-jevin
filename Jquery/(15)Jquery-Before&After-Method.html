@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        body{
+           font-family: Arial;
+       }
+       .test{
+           /* height: 100px; */
+           width: 900px;
+           padding: 20px;
+           /* background-color: pink; */
+           border: 1px solid black ;
+       }
+       .boxbg{
+           background-color: orange;
+       }
+   </style>
+</head>
+<body>
+    <h1>Before & After</h1>
+
+    <div class="test" id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam consequuntur deleniti ad sed quidem dolor amet enim perspiciatis non nihil cumque minus nemo commodi!</p>
+    </div>
+    <br>
+    <button id="Beforebtn">Before</button>
+    <button id="Afterbtn">After</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#Beforebtn').click(function(){
+                $('#box').before("<h3>Hello World</h3>")
+            });
+
+            $('#Afterbtn').click(function(){
+                $('#box').after("<h3>Hello World</h3>")
+            });
+        });
+    </script>
+</body>
+</html>
