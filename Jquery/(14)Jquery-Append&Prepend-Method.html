@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Append & Prepend Methods</title>
+    <style>
+        body{
+           font-family: Arial;
+       }
+       .test{
+           /* height: 100px; */
+           width: 900px;
+           padding: 20px;
+           /* background-color: pink; */
+           border: 1px solid black ;
+       }
+       .boxbg{
+           background-color: orange;
+       }
+   </style>
+</head>
+<body>
+    <h1>Jquery Append & Prepend Methods</h1>
+
+    <div class="test" id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam consequuntur deleniti ad sed quidem dolor amet enim perspiciatis non nihil cumque minus nemo commodi!</p>
+    </div>
+
+    <!-- <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+    </ol> -->
+
+    <br>
+    <button id="Appendbtn">Append</button>
+    <button id="Prependbtn">Prepend</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#Appendbtn").click(function(){
+                $("#box").append("<h1>Hello World</h1><p> This is pera</p>")
+            });
+
+            $('#Prependbtn').click(function(){
+                $('#box').prepend("<h3>Hello Jevin</h3>")
+            });
+        });
+
+        ///////////////////////////////////////////////////////////
+                    // ol //
+        // $(document).ready(function(){
+        //     $('#Appendbtn').click(function(){
+        //         $('ol').append("<li>list item new</li>")
+        //     });
+
+        //     $('#Prependbtn').click(function(){
+        //         $('ol').prepend("<li>list item new</li>")
+        //     });
+        // });
+    </script>
+</body>
+</html>
